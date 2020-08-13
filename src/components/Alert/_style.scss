@@ -1,0 +1,17 @@
+.alert {
+  position: relative;
+  display: block;
+  color: $white;
+  width: 250px;
+
+}
+
+.alert-default {
+  @include alert-style($primary)
+}
+
+.alert-danger {
+  @include alert-style($danger)
+}
+
+
