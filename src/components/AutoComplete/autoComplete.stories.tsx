@@ -30,21 +30,21 @@ const simpleComplete = () => {
 }
 
 const textComplete = `
-  ~~~javascript
-  ### Demo code
-  const lakers = ['bradley', 'pope', 'caruso', 'cook', 'cousins', 'james', 'AD', 'green', 'howard', 'kuzma', 'McGee', 'rando']
-  const handleFetch = (query: string) => {
-    return lakers.filter(name => name.includes(query)).map(name => ({ value: name }));
-  }
+### Demo code  
+~~~javascript
+const lakers = ['bradley', 'pope', 'caruso', 'cook', 'cousins', 'james', 'AD', 'green', 'howard', 'kuzma', 'McGee', 'rando']
+const handleFetch = (query: string) => {
+  return lakers.filter(name => name.includes(query)).map(name => ({ value: name }));
+}
 
-  return (
-    <AutoComplete
-      fetchSuggestions={handleFetch}
-      onSelect={action('selected')}
-      placeholder="Input Laker player's English name."
-    />
-  )
-  ~~~
+return (
+  <AutoComplete
+    fetchSuggestions={handleFetch}
+    onSelect={action('selected')}
+    placeholder="Input Laker player's English name."
+  />
+)
+~~~
 `
 
 const customComplete = () => {
@@ -147,7 +147,7 @@ const ajaxComplete = () => {
   }
 
   return (
-    <AutoComplete 
+    <AutoComplete
       fetchSuggestions={handleFetch}
       placeholder="Input Github username."
       onSelect={action('selected')}
@@ -190,6 +190,6 @@ return (
 `
 
 storiesOf('AutoComplete', module)
-  .add('AutoComplete', simpleComplete, {info: {source: false, text: textComplete}})
-  .add('Customize options', customComplete,  {info: {source: false, text: textCustom}})
-  .add('Async request Github username', ajaxComplete, {info: {source: false, text: textAjax}})
+  .add('AutoComplete', simpleComplete, { info: { source: false, text: textComplete } })
+  .add('Customize options', customComplete, { info: { source: false, text: textCustom } })
+  .add('Async request Github username', ajaxComplete, { info: { source: false, text: textAjax } })
