@@ -148,7 +148,7 @@ export const Upload: FC<UploadProps> = (props) => {
         }
       }
     }).then(res => {
-      console.log(res);
+      // console.log(res);
       updateFileList(_file, { status: 'success', response: res.data });
       if (onSuccess) {
         onSuccess(res.data, _file);
@@ -157,7 +157,7 @@ export const Upload: FC<UploadProps> = (props) => {
         onChange(_file);
       }
     }).catch(err => {
-      console.error(err);
+      // console.error(err);
       updateFileList(_file, { status: 'error', error: err });
       if (onError) {
         onError(err, _file);
@@ -167,7 +167,7 @@ export const Upload: FC<UploadProps> = (props) => {
       }
     })
   }
-  console.log(fileList);
+  // console.log(fileList);
   return (
     <div className="deng-upload-component">
       <div className="deng-upload-input"
