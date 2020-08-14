@@ -1,44 +1,53 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Welcome to Bottle-UI
 
-## Available Scripts
+## Bottle-UI Component Library
 
-In the project directory, you can run:
+React components for faster and simpler web development. Build your own design system, or start with Bottle Design.
 
-### `yarn start`
+[![Build Status](https://travis-ci.com/DeclanDeng/bottle-ui.svg?branch=master)](https://travis-ci.com/github/DeclanDeng/bottle-ui)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### DEMO
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+[https://declandeng.github.io/bottle-ui](https://declandeng.github.io/bottle-ui/?path=/story/welcome-page--welcome)
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### INSTALLATION
 
-### `yarn build`
+~~~javascript
+npm install vikingship --save
+~~~
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### USAGE
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+~~~javascript
+// Import css file
+import 'bottle-ui/dist/index.css'
+// Import component
+import { Button } from 'bottle-ui'
+~~~
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Highlight
 
-### `yarn eject`
+* 🔥 Typescript with React Hooks
+* ⛑️ Implemented unit tests by using react-testing-library
+* 📚 Debugging and displaying components by using storybook
+* 📚 Created documents by using react-doc-gen
+* 📦 Developed components by using react-fontawesome, react-transition-group
+* 🌹 Designed components style by Sass
+* 🎉 The project includes npm publish，using husky to prevent bad git commit，and travis CI/CD
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Available Scripts
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+~~~bash
+// run storybook in local environment
+yarn stroybook
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+// run unit tests
+yarn test
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+// build static files to publish
+yarn build
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+// publish to npm
+yarn publish
+~~~

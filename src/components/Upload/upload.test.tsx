@@ -5,11 +5,11 @@ import { render, RenderResult, fireEvent, wait } from '@testing-library/react';
 
 import { Upload, UploadProps } from './upload';
 
-// jest.mock('../Icon/icon', () => {
-//   return ({icon}) => {
-//     return <span>{icon}</span>
-//   }
-// });
+jest.mock('../Icon/icon', () => {
+  return (props: any) => {
+    return <span>{props.icon}</span>
+  }
+});
 
 jest.mock('axios');
 
