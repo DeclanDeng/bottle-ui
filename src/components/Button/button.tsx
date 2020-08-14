@@ -24,7 +24,7 @@ export type ButtonProps = Partial<NativeButtonProps & AnchorButtonProps>
  * The most common Button component, support all attributes of HTML button and anchor link
  * ### how to import
  * ~~~js
- * import { Button } from 'dengui'
+ * import { Button } from 'bottle-ui'
  * ~~~
  */
 export const Button: FC<ButtonProps> = (props) => {

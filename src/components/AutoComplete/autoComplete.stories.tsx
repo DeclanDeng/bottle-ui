@@ -31,6 +31,7 @@ const simpleComplete = () => {
 
 const textComplete = `
   ~~~javascript
+  ### Demo code
   const lakers = ['bradley', 'pope', 'caruso', 'cook', 'cousins', 'james', 'AD', 'green', 'howard', 'kuzma', 'McGee', 'rando']
   const handleFetch = (query: string) => {
     return lakers.filter(name => name.includes(query)).map(name => ({ value: name }));

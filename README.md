@@ -14,7 +14,7 @@ React components for faster and simpler web development. Build your own design s
 ### INSTALLATION
 
 ~~~javascript
-npm install vikingship --save
+npm install bottle-ui --save
 ~~~
 
 ### USAGE
